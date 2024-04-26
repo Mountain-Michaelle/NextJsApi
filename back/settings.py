@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r5chnd9#yh7dz+j@f=h2#xnam&8dx=b-th2xh_$8)huai8b%2!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://secureweb-beta.vercel.app', 'http://localhost:3000', '127.0.0.1']
+ALLOWED_HOSTS = ['https://secureweb-beta.vercel.app', 'localhost', '127.0.0.1']
 
 # Application definition
 
@@ -147,9 +147,9 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'build/static')
-]
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'build/static')
+# ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')  
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
